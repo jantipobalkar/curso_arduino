@@ -30,6 +30,38 @@ void setup() {
 
   Serial.println("El día de la semana es " + nombreDia);
 
+int nota = 7;
+String calif = "";
+
+switch (nota) {
+  case 0:
+  case 1:
+  case 2:
+  case 3:
+  case 4:
+    calif = "Suspendido.";
+    break;
+  
+  case 5:
+    calif = "Aprobado.";
+    break;
+
+  case 6 ... 7:
+    calif = "Bien.";
+    break;
+
+  case 8 ... 9:
+    calif = "Notable.";
+    break;
+  
+  default:
+    calif = "Sobre.";
+    break;
+  
+
+}
+Serial.println("La nota es " + calif);
+
 }
 
 void loop() {
