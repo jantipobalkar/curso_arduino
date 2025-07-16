@@ -3,6 +3,8 @@
 
 void setup() {
  Serial.begin(115200);
+int limite = 10;
+int contador = 0;
 
 /*for(int i = 0; i < 10; i++){
 
@@ -16,6 +18,8 @@ void setup() {
 /*for(int i = 100; i > 0; i--){
   Serial.println("Números: " + String(i));
 }*/
+
+/*
 String salida = "";
 
 for(int fila = 0; fila < 10; fila++){
@@ -26,7 +30,27 @@ for(int fila = 0; fila < 10; fila++){
   //Serial.println();
   salida += "\n";
 }
-Serial.print(salida);
+Serial.print(salida);*/
+/*
+d
+for(;;){
+
+  if (contador == limite){
+    break;
+  }
+Serial.print("Infinito: ");
+Serial.println(contador);
+contador ++;
+
+}*/
+
+while (contador < limite) {
+Serial.print("Infinito: ");
+Serial.println(contador);
+contador ++;
+}
+
+
 }
 
 void loop() {
